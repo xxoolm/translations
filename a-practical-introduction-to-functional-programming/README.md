@@ -28,7 +28,7 @@ PS：本人是在《[Functional Programming, Simplified(Scala edition)](https://
 - [不要迭代列表，使用`map`和`reduce`](#%E4%B8%8D%E8%A6%81%E8%BF%AD%E4%BB%A3%E5%88%97%E8%A1%A8%E4%BD%BF%E7%94%A8map%E5%92%8Creduce)
     - [`map`](#map)
     - [`reduce`](#reduce)
-- [声明方式编写代码，而非命令式](#%E5%A3%B0%E6%98%8E%E6%96%B9%E5%BC%8F%E7%BC%96%E5%86%99%E4%BB%A3%E7%A0%81%E8%80%8C%E9%9D%9E%E5%91%BD%E4%BB%A4%E5%BC%8F)
+- [编写声明式代码，而非命令式](#%E7%BC%96%E5%86%99%E5%A3%B0%E6%98%8E%E5%BC%8F%E4%BB%A3%E7%A0%81%E8%80%8C%E9%9D%9E%E5%91%BD%E4%BB%A4%E5%BC%8F)
     - [使用函数](#%E4%BD%BF%E7%94%A8%E5%87%BD%E6%95%B0)
     - [消除状态](#%E6%B6%88%E9%99%A4%E7%8A%B6%E6%80%81)
 - [使用管道](#%E4%BD%BF%E7%94%A8%E7%AE%A1%E9%81%93)
@@ -235,7 +235,7 @@ if len(heights) > 0:
     average_height = reduce(add, heights) / len(heights)
 ```
 
-# 声明方式编写代码，而非命令式
+# 编写声明式代码，而非命令式
 
 下面的程序演示三辆赛车的比赛。每过一段时间，赛车可能向前跑了，也可能抛锚而原地不动。在每个时间段，程序打印出目前为止的赛车路径。五个时间段后比赛结束。
 
